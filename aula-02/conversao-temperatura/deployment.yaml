@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metada:
+  name: conversao-temperatura
+spec:
+  selector:
+    matchLabels:
+      app: conversao-temperatura
+  template:
+    metadata:
+      labels:
+        app: conversao-temperatura
+    spec:
+      containers:
+      - name: temperatura
+        image: genildovsm/conversao-temperatura:v1
+        ports:
+        - containerPort: 8080
