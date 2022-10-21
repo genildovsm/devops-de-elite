@@ -1,1 +1,1 @@
-# devops-de-elite
+# Desafios propostos na Jornada Devops
